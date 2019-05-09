@@ -2,6 +2,7 @@ import 'core-js/stable';
 import {Aurelia} from 'aurelia-framework'
 import environment from './environment';
 import {PLATFORM} from 'aurelia-pal';
+import 'bootstrap';
 
 export function configure(aurelia: Aurelia) {
   aurelia.use
