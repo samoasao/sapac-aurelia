@@ -12,6 +12,7 @@
     "aurelia-bootstrapper": "^2.3.2"
   },
   "devDependencies": {
+    "@types/ejs": "^2.6.3",
     "@types/jasmine": "^3.3.12",
     "@types/jest": "^24.0.12",
     "@types/lodash": "^4.14.117",
