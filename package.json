@@ -3,8 +3,8 @@
   "description": "An Aurelia client application.",
   "version": "0.1.0",
   "repository": {
-    "type": "???",
-    "url": "???"
+    "type": "GitHub",
+    "url": "https://github.com/samoasao/sapac-aurelia.git"
   },
   "license": "MIT",
   "dependencies": {
