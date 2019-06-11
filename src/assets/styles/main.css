@@ -1,6 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
-html, body
+html
 {
     height: 100%;
 }
@@ -8,6 +8,11 @@ html, body
 body{
   font-family: "Raleway", sans-serif;
   letter-spacing: .04em;
+  min-height: 100%;
+}
+
+main{
+  height:91vh
 }
 
 h1, h2, h3, h4, .navbar-brand {
@@ -80,7 +85,6 @@ h1, h2, h3, h4, .navbar-brand {
 
 .about{
   background: url(../images/bg/subtle_white_feathers.png);
-  
 }
 
  @media screen and (max-width: 540px){
