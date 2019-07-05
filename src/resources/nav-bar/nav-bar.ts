@@ -30,7 +30,7 @@ export class NavBar {
     });
 
     ea.subscribe('router:navigation:complete', (router) => {
-      if (this.anchor){
+      if (this.anchor && document.getElementById(this.anchor)){
         document.getElementById(this.anchor).scrollIntoView();
       }
     });
