@@ -1,14 +1,38 @@
-import {EventAggregator} from 'aurelia-event-aggregator';
-import {inject} from 'aurelia-framework';
+import { EventAggregator } from 'aurelia-event-aggregator';
+import { inject } from 'aurelia-framework';
 
 @inject(EventAggregator)
 export class NavBar {
-  activePage : string
+  activePage: string
+  anchor: string
+
+  attached() {
+
+    let links = document.getElementsByClassName("show_link");
+    for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", (e) => {
+        let name = e.target["name"];
+        this.anchor = name;
+          
+        let el = document.getElementById(this.anchor);
+        if(el){
+          el.scrollIntoView();
+          this.anchor = '';
+        }
+      })
+    }
+
+  }
 
   constructor(ea: EventAggregator) {
     ea.subscribe('router:navigation:success', (router) => {
-      console.log(router);
       this.activePage = router.instruction.config.name;
+    });
+
+    ea.subscribe('router:navigation:complete', (router) => {
+      if (this.anchor){
+        document.getElementById(this.anchor).scrollIntoView();
+      }
     });
   }
 
