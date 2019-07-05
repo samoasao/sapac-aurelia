@@ -1,13 +1,10 @@
 <template>
   <require from="./assets/styles/main.css"></require>
   <require from="./resources/nav-bar/nav-bar"></require>
-  <require from="./scriptinjector"></require>
 
   <nav-bar></nav-bar>
   <main class="container-fluid mx-0 px-0">
     <router-view></router-view>
   </main>
-  <scriptinjector url="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></scriptinjector>
-  <scriptinjector url="scripts/mailchimp.js"></scriptinjector>
-
+  
 </template>
