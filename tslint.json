@@ -1,5 +1,8 @@
 {
   "rules": {
     "no-empty": true
+  },
+  "linterOptions":{
+    "exclude":["./index.ejs"]
   }
 }

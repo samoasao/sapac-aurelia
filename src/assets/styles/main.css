@@ -1,0 +1,94 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html
+{
+    height: 100%;
+}
+
+body{
+  font-family: "Raleway", sans-serif;
+  letter-spacing: .04em;
+  min-height: 100%;
+}
+
+main{
+  height:91vh
+}
+
+h1, h2, h3, h4, .navbar-brand {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .19em;
+}
+.row{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.myCarouselSection{
+  background: url(../images/bg/Cover_Photo.jpg);
+  background-position-y: 50%;
+}
+
+#carouselTitle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  width: 50%;
+  opacity: .55;
+  text-shadow: 5px 5px 5px #222;
+  background: white;
+
+}
+
+#logo-back{
+  background: white;
+  width: 100%;
+  /* z-index: 100; */
+}
+
+
+.event{
+  background: url(../images/bg/subtle_white_feathers.png);
+}
+
+.event-item{
+  background-color: white;
+  position: relative;
+}
+.event-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.byline{
+  color: #d52b1e;
+  font-size: 14px;
+}
+
+.location{
+  color: #B4B4B4;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.performance-date{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about{
+  background: url(../images/bg/subtle_white_feathers.png);
+}
+
+ @media screen and (max-width: 540px){
+  #carouselTitle{
+    font-size: 72px;
+  }
+} 

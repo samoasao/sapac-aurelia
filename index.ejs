@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title><%- htmlWebpackPlugin.options.metadata.title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="<%- htmlWebpackPlugin.options.metadata.baseUrl %>">
-    <!-- imported CSS are concatenated and added automatically -->
-  </head>
-  <body aurelia-app="main">
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title><%- htmlWebpackPlugin.options.metadata.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="<%- htmlWebpackPlugin.options.metadata.baseUrl %>">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,400i,700" rel="stylesheet">
+  <!-- imported CSS are concatenated and added automatically -->
+  
+
+
+
+</head>
+
+<body>
+  <div aurelia-app="main">
+
+  </div>
+
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script type="text/javascript">
+
+    window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"232e185757b4b5a36ca9117d0","lid":"b0e38f59a3","uniqueMethods":true}) })</script>
+
+    
+</body>
+
+
 </html>
