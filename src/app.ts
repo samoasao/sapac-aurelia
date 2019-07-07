@@ -15,7 +15,8 @@ export class App {
       { route: 'board', name: 'about', moduleId: PLATFORM.moduleName('pages/board/board.html'), nav: true},
       { route: 'donate', name: 'about', moduleId: PLATFORM.moduleName('pages/donate/donate.html'), nav: true},
       { route: 'support', name: 'support', moduleId: PLATFORM.moduleName('pages/support/support-individual.html'), nav: true},
-      { route: 'support-corporate', name: 'support', moduleId: PLATFORM.moduleName('pages/support/support-corporate.html'), nav: true}
+      { route: 'support-corporate', name: 'support', moduleId: PLATFORM.moduleName('pages/support/support-corporate.html'), nav: true},
+      { route: 'tickets', name: 'shows', moduleId: PLATFORM.moduleName('pages/tickets/tickets.html'), nav: true}
     ]);
   }
 
