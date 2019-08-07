@@ -6,7 +6,7 @@
         </div> 
         <div class="col-sm-9">
             <p class="text-justify">
-                <strong>${name}</strong> - ${bio}
+                <strong>${name}</strong> <span innerhtml="- ${bio | sanitizeHTML}"></span>
             </p>
 
 
