@@ -93,8 +93,10 @@ h1, h2, h3, h4, .navbar-brand {
   }
 } 
 
-#navList{
-  position: absolute;
-  bottom: 0;
-  right: 10px;
+@media screen and (min-width: 992px){
+  #navList{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  } 
 }
