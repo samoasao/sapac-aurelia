@@ -13,9 +13,9 @@ export class NavBar {
       links[i].addEventListener("click", (e) => {
         let name = e.target["name"];
         this.anchor = name;
-          
+
         let el = document.getElementById(this.anchor);
-        if(el){
+        if (el) {
           el.scrollIntoView();
           this.anchor = '';
         }
@@ -30,9 +30,14 @@ export class NavBar {
     });
 
     ea.subscribe('router:navigation:complete', (router) => {
-      if (this.anchor && document.getElementById(this.anchor)){
+      if (this.anchor && document.getElementById(this.anchor)) {
         document.getElementById(this.anchor).scrollIntoView();
       }
+
+      if (router.instruction.config.route === 'tickets') {
+        window['showtixWidget'].loadEvents(17593, 39623);
+      }
+
     });
   }
 
